@@ -20,7 +20,14 @@ int main()
 {
     int n;
     cin >> n;
-    cout << isArmstrong(n) << endl;
+    if (isArmstrong(n))
+    {
+        cout << "Yes" << endl;
+    }
+    else
+    {
+        cout << "No" << endl;
+    }
 
     return 0;
 }
