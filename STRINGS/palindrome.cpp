@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool ispalindrome(int i, string& s)
+bool ispalindrome(int i, string s)
 {
     if (i >= s.length() / 2)
         return true;
@@ -12,8 +12,15 @@ bool ispalindrome(int i, string& s)
 
 int main()
 {
-    string s = "madam";
-    cout << ispalindrome(0, s) << endl;
+    string s = "madm";
+    if (ispalindrome(0, s))
+    {
+        cout << "The string is a palindrome" << endl;
+    }
+    else
+    {
+        cout << "The string is not a palindrome" << endl;
+    }
 
     return 0;
 }
